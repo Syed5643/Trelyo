@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trelyo – Digital presence, marketing and sales follow-up in one team</title>
+<meta name="description" content="A connected growth partner for small and medium businesses: digital presence, digital marketing and sales conversion, working as one system.">
+<meta property="og:title" content="Trelyo – Be Seen. Get Chosen. Grow.">
+<meta property="og:description" content="Digital presence, digital marketing and sales conversion working as one connected growth system.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B1020">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1020;--navy2:#141C38;--paper:#F7F6F2;--ink:#0E1428;--muted:#51597A;--indigo:#4B4DFF;--glow:#9193FF;--line:#E1E0D8;--dline:rgba(255,255,255,.14);
+--d:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--b:"Figtree","Segoe UI",system-ui,sans-serif;--pad:clamp(20px,5vw,56px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--b);overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--d);margin:0;line-height:1.08;letter-spacing:-.02em}p{margin:0}ul{margin:0;padding:0;list-style:none}
+.w{max-width:1140px;margin:0 auto;padding:0 var(--pad)}
+:focus-visible{outline:3px solid var(--glow);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:#000;padding:10px 14px;border-radius:6px;z-index:99}.skip:focus{top:12px}
+section{padding:clamp(72px,10vw,128px) 0}
+.dark{background:var(--navy);color:#fff}.dark .sub,.dark p{color:#B9C0DE}
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.brand-badge:hover {
+    opacity: 0.9;
+}
+
+.brand-badge img {
+    height: 32px;
+    width: auto;
+    display: block;
+}
+h2{font-size:clamp(2rem,4.6vw,3.3rem);font-weight:700}
+.sub{margin-top:16px;color:var(--muted);font-size:1.12rem;max-width:36em}
+.head{max-width:700px;margin-bottom:clamp(36px,6vw,64px)}
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,border-color .3s;border-bottom:1px solid transparent;color:#fff}
+.nav.s{background:rgba(11,16,32,.9);backdrop-filter:blur(10px);border-color:var(--dline)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font:700 1.35rem var(--d);text-decoration:none;color:#fff;letter-spacing:-.01em}
+.nav ul{display:flex;gap:28px;align-items:center}.nav a{text-decoration:none}
+.nav li a:not(.btn){font-size:.95rem;color:#C9CFEA;font-weight:500}.nav li a:not(.btn):hover{color:#fff}
+.menu{display:none;background:none;border:1px solid var(--dline);border-radius:8px;width:44px;height:44px;color:#fff;cursor:pointer;align-items:center;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;font:600 1rem var(--b);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn:active{transform:translateY(1px)}
+.bp{background:var(--indigo);color:#fff}.bp:hover{background:#5E60FF;box-shadow:0 8px 24px -8px rgba(75,77,255,.7)}
+.bg{border-color:rgba(255,255,255,.35);color:#fff}.bg:hover{background:rgba(255,255,255,.1)}
+.bg.l{border-color:var(--ink);color:var(--ink)}.bg.l:hover{background:var(--ink);color:#fff}
+.nav .btn{min-height:40px;padding:0 18px;color:#fff}
+/* hero */
+.hero{padding:clamp(110px,14vw,160px) 0 clamp(64px,9vw,112px);background:radial-gradient(60% 50% at 80% 30%,rgba(75,77,255,.22),transparent 70%),var(--navy)}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,72px);align-items:center}
+.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);font-weight:700}
+.hero .lead{font-size:clamp(1.08rem,2vw,1.28rem);margin:24px 0 32px;max-width:32em}
+.cta{display:flex;gap:12px;flex-wrap:wrap}.hero .one{margin-top:28px;font-size:.98rem;color:#8E97C0}
+.stack{position:relative;display:grid;gap:14px;padding-left:34px}
+.stack::before{content:"";position:absolute;left:11px;top:20px;bottom:20px;width:2px;background:linear-gradient(var(--glow),var(--indigo));box-shadow:0 0 14px var(--indigo);transform-origin:top;animation:gr 1.2s .3s ease both}
+@keyframes gr{from{transform:scaleY(0)}}
+.lay{position:relative;background:var(--navy2);border:1px solid var(--dline);border-radius:14px;padding:16px}
+.lay::before{content:"";position:absolute;left:-30px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--navy);border:2px solid var(--glow)}
+.lay:last-of-type::before{background:var(--glow)}
+.lay b{display:block;font:600 .9rem var(--b);color:#fff;margin-bottom:10px}
+.cap{font-size:.82rem;color:#8E97C0;padding-left:34px;margin-top:6px}
+.ln{height:7px;border-radius:4px;background:rgba(255,255,255,.14);margin-bottom:7px}.ln.a{background:var(--indigo);width:46%}
+.chips{display:flex;gap:6px;flex-wrap:wrap}.chip{font-size:.8rem;padding:4px 10px;border-radius:999px;border:1px solid var(--dline);color:#C9CFEA;white-space:nowrap}.chip.on{background:var(--indigo);border-color:var(--indigo);color:#fff}
+.dots{display:flex;gap:5px;margin-top:10px}.dots i{width:10px;height:10px;border-radius:50%;background:var(--glow);opacity:.8}.dots i:nth-child(odd){opacity:.35}
+/* problem */
+.prob{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.prob>div{padding:28px 28px 0 0}.prob>div+div{padding-left:28px;border-left:1px solid var(--line)}
+.prob svg{width:30px;height:30px;stroke:var(--indigo);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px;transition:transform .3s}.prob>div:hover svg{transform:translateY(-3px)}
+.prob h3{font-size:1.4rem;margin-bottom:10px}.prob p{color:var(--muted)}
+/* services */
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center;padding:clamp(40px,6vw,72px) 0;border-top:1px solid var(--line)}
+.svc.r .tx{order:2}
+.tag{font:600 .95rem var(--b);color:var(--indigo);margin-bottom:12px}
+.svc h3{font-size:clamp(1.6rem,3vw,2.2rem)}.svc .in{margin:14px 0 22px;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.two h4{font:600 .92rem var(--b);margin-bottom:8px}.two li{position:relative;padding-left:16px;margin-bottom:7px;font-size:.98rem;color:var(--muted)}
+.two li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--indigo)}
+.vis{background:linear-gradient(160deg,#E9E9FF,#F2F1EA);border-radius:20px;padding:clamp(20px,4vw,36px);position:relative;min-height:280px;display:flex;align-items:center;justify-content:center}
+.vis small,.note{display:block;font-size:.82rem;color:var(--muted);margin-top:14px}
+.scr{background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 40px -22px rgba(14,20,40,.35);overflow:hidden}
+.scr .tb{height:20px;background:#EEEDE6;display:flex;gap:4px;align-items:center;padding:0 8px}.tb i{width:6px;height:6px;border-radius:50%;background:#C9C8BF}
+.scr .bd{padding:12px}.sl{height:7px;border-radius:4px;background:#E4E3DC;margin-bottom:6px}.sl.k{background:var(--ink);width:55%;height:10px}.sl.i{background:var(--indigo);width:30%;height:14px;border-radius:8px;margin-top:10px}
+.dsk{width:min(100%,300px)}.mob{width:92px;position:absolute;right:clamp(10px,4vw,34px);bottom:30px;border-radius:14px}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%;max-width:340px}
+.cal span{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px;font-size:.78rem;color:var(--muted);min-height:54px}.cal span.p{background:var(--indigo);border-color:var(--indigo);color:#fff}
+.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;width:100%}
+.pipe div{font-size:.72rem;font-weight:600;text-align:center}.pipe i{display:block;background:#fff;border:1px solid var(--line);border-radius:6px;height:26px;margin-top:6px}.pipe i.p{background:var(--indigo);border-color:var(--indigo)}
+/* journey */
+.rail{position:relative;padding-left:clamp(44px,8vw,100px)}
+.tr{position:absolute;left:11px;top:12px;bottom:12px;width:2px;background:var(--dline)}.fl{width:100%;height:100%;background:var(--glow);box-shadow:0 0 12px var(--indigo);transform-origin:top;transform:scaleY(0)}
+.st{position:relative;padding-bottom:clamp(44px,7vw,80px);opacity:.45;transition:opacity .5s}.st:last-child{padding-bottom:0}.st.on{opacity:1}
+.st::before{content:"";position:absolute;left:calc(-1*clamp(44px,8vw,100px) + 2px);top:8px;width:20px;height:20px;border-radius:50%;background:var(--navy);border:2px solid var(--dline);transition:.4s}
+.st.on::before{background:var(--glow);border-color:var(--glow)}
+.st .k{color:var(--glow);font:600 .95rem var(--b);margin-bottom:6px}.st h3{font-size:clamp(1.5rem,3vw,2.1rem)}.st p{margin-top:10px;max-width:34em}
+.quote{margin-top:clamp(40px,6vw,64px);font:500 clamp(1.2rem,2.4vw,1.6rem) var(--d);color:#fff}
+/* benefits, who */
+.ben{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,4vw,48px)}
+.ben>div{padding:24px 0 32px;border-top:1px solid var(--ink)}.ben h3{font-size:1.25rem;margin-bottom:8px}.ben p{color:var(--muted);font-size:1rem}
+.who{background:#EFEEE8}.wl{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(32px,6vw,80px)}
+.wl li{padding:20px 0;border-top:1px solid #D2D1C8;display:grid;grid-template-columns:minmax(120px,.5fr) 1fr;gap:16px}
+.wl b{font:700 1.05rem var(--d)}.wl span{color:var(--muted);font-size:1rem}
+/* process */
+.tl{position:relative;display:grid;gap:0}.tl li{position:relative;padding:0 0 36px 56px}.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:15px;top:36px;bottom:-2px;width:2px;background:var(--line)}.tl li:last-child::before{display:none}
+.tl em{position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--indigo);color:#fff;font:700 .9rem/32px var(--d);text-align:center;font-style:normal}
+.tl h3{font-size:1.3rem;margin-bottom:6px}.tl p{color:var(--muted);max-width:40em}
+.pg{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,80px)}
+/* contact */
+.cg{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,80px);align-items:start}
+.cg h2{font-size:clamp(2.1rem,4.8vw,3.4rem)}.dl{margin-top:28px}.dl li{padding:12px 0;border-top:1px solid var(--dline);color:#fff}.dl span{display:block;font-size:.85rem;color:#8E97C0}
+.contact-links a{color:#fff;text-decoration:none;transition:color .2s}
+.contact-links a:hover{color:var(--glow);text-decoration:underline}
+.num-list{display:flex;flex-direction:column;gap:4px;margin-top:4px}
+form{background:#fff;color:var(--ink);border-radius:18px;padding:clamp(20px,4vw,36px);display:grid;gap:16px}
+label,legend{font:600 .93rem var(--b);display:grid;gap:6px;padding:0}label small{font-weight:400;color:var(--muted)}
+input,select,textarea{font:400 1rem var(--b);padding:12px 14px;border:1.5px solid #B7BBCF;border-radius:10px;background:#fff;color:var(--ink);width:100%;min-height:48px}textarea{min-height:100px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--glow);outline-offset:1px;border-color:var(--indigo)}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:16px}fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:grid;grid-template-columns:1fr 1fr;gap:8px}.opt label{display:flex;align-items:center;gap:8px;font-weight:500;border:1.5px solid #B7BBCF;border-radius:10px;padding:10px 12px;cursor:pointer;min-height:48px}
+.opt input{width:18px;height:18px;min-height:0;accent-color:var(--indigo)}.opt label:has(input:checked){border-color:var(--indigo);background:#EEEEFF}
+.er{color:#B3261E;font-size:.86rem;font-weight:500;min-height:0}[aria-invalid=true]{border-color:#B3261E}
+#st{font-size:.95rem;font-weight:600;min-height:1.4em}
+footer{background:#070B17;color:#8E97C0;padding:56px 0 28px;font-size:.95rem}footer a{color:#C9CFEA;text-decoration:none}footer a:hover{color:#fff}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}footer h4{font:600 .9rem var(--b);color:#fff;margin-bottom:12px}footer li{margin-bottom:8px}
+.cp{border-top:1px solid var(--dline);padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+/* reveal */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease;transition-delay:calc(var(--i,0)*90ms)}.rv.in{opacity:1;transform:none}.nj .rv{opacity:1;transform:none}
+@media(max-width:900px){.hg,.svc,.cg,.pg,.wl{grid-template-columns:1fr}.svc.r .tx{order:0}.prob,.ben{grid-template-columns:1fr}.prob>div+div{padding-left:0;border-left:0;border-top:1px solid var(--line);margin-top:28px}.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.menu{display:inline-flex}.nav ul{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--navy);padding:6px var(--pad) 20px;max-height:0;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.nav ul.o{max-height:80vh;opacity:1;visibility:visible}.nav li a:not(.btn){display:block;padding:14px 0;border-bottom:1px solid var(--dline);font-size:1.05rem}.nav li:last-child{margin-top:16px}.nav .btn{min-height:48px}
+.two,.r2,.opt{grid-template-columns:1fr}.cta .btn{flex:1 1 100%}.wl li{grid-template-columns:1fr;gap:4px}.pipe div{font-size:.62rem}.fg{grid-template-columns:1fr}.mob{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.fl{transform:none}.st{opacity:1}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav"><div class="w bar">
+<a class="brand-badge" href="#top" aria-label="Trelyo Home">
+    <img src="logo1.jpeg" alt="Trelyo Logo">
+</a>
+<button class="menu" id="mb" aria-label="Open menu" aria-expanded="false" aria-controls="ml"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h14M3 14h14"/></svg></button>
+<ul id="ml"><li><a href="#services">Services</a></li><li><a href="#why">Why Us</a></li><li><a href="#process">Our Process</a></li><li><a href="#contact">Contact</a></li><li><a class="btn bp" href="#contact">Let’s Talk Growth</a></li></ul>
+</div></header>
+
+<main id="main"><span id="top"></span>
+<section class="hero dark" style="padding-bottom:clamp(64px,9vw,112px)"><div class="w hg">
+<div>
+<h1>Your Business Deserves to Be Seen, Chosen &amp; Remembered.</h1>
+<p class="lead">We help businesses build a stronger digital presence, attract the right audience, and turn more enquiries into meaningful customer relationships.</p>
+<div class="cta"><a class="btn bp" href="#contact">Let’s Talk Growth</a><a class="btn bg" href="#services">Explore What We Do</a></div>
+<p class="one">One growth partner. Three connected capabilities. A clearer path to growth.</p>
+</div>
+<div><div class="stack" aria-label="Illustration: presence, marketing and sales connected">
+<div class="lay"><b>Digital Presence</b><div class="ln" style="width:70%"></div><div class="ln a"></div><div class="chips" style="margin-top:10px"><span class="chip">Call</span><span class="chip">WhatsApp</span><span class="chip">Directions</span></div></div>
+<div class="lay"><b>Digital Marketing</b><div class="chips"><span class="chip">Social posts</span><span class="chip">Meta ads</span><span class="chip">Google ads</span></div><div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<div class="lay"><b>Sales Conversion</b><div class="chips"><span class="chip">New</span><span class="chip">Contacted</span><span class="chip">Follow-up</span><span class="chip on">Appointment</span></div></div>
+</div><p class="cap">Illustrative example only. Not real results.</p></div>
+</div></section>
+
+<section id="why" aria-labelledby="ph"><div class="w">
+<div class="head rv"><h2 id="ph">Great Businesses Shouldn’t Be Hard to Find.</h2><p class="sub">What is holding your business back? Three common gaps, not every business has all of them.</p></div>
+<div class="prob">
+<div class="rv" style="--i:0"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M8 11h6"/></svg><h3>Invisible online</h3><p>Potential customers search online before they decide. Without a credible digital presence, a business can miss the chance to be discovered and considered.</p></div>
+<div class="rv" style="--i:1"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg><h3>Inconsistent visibility</h3><p>When communication online is irregular, it is harder to stay familiar and relevant at the moment someone is ready to choose.</p></div>
+<div class="rv" style="--i:2"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M9 10h6"/></svg><h3>Lost enquiries</h3><p>Interest does not always become a sale. Slow replies, missed messages and no follow-up can cost a business potential customers.</p></div>
+</div></div></section>
+
+<section id="services" style="background:#fff" aria-labelledby="sh"><div class="w">
+<div class="head rv"><h2 id="sh">Three Essential Pieces. One Connected Growth Strategy.</h2><p class="sub">Your digital presence attracts attention. Your marketing builds momentum. Your sales follow-up helps turn interest into action.</p></div>
+
+<article class="svc rv"><div class="tx"><p class="tag">Digital Presence</p><h3>Make a Strong First Impression Before the First Conversation.</h3><p class="in">A credible online presence helps people understand your business and feel confident enough to get in touch.</p>
+<div class="two"><div><h4>What we provide</h4><ul><li>Professional, mobile-friendly website</li><li>Clear products, services and location</li><li>Contact forms, WhatsApp links and CTAs</li><li>Google Business Profile setup</li><li>Basic SEO foundations</li></ul></div><div><h4>What it means for you</h4><ul><li>Visitors understand what you offer</li><li>More credibility and confidence</li><li>Key information is easy to find</li><li>A simple way to enquire</li><li>One home for your marketing</li></ul></div></div></div>
+<div><div class="vis"><div class="scr dsk"><div class="tb"><i></i><i></i><i></i></div><div class="bd"><div class="sl k"></div><div class="sl" style="width:90%"></div><div class="sl" style="width:70%"></div><div class="sl i"></div></div></div><div class="scr mob"><div class="bd" style="padding:10px 8px"><div class="sl k" style="width:70%"></div><div class="sl"></div><div class="sl i" style="width:60%"></div></div></div></div><span class="note">Example of a hypothetical business website. Not client work.</span></div></article>
+
+<article class="svc r rv"><div class="tx"><p class="tag">Digital Marketing</p><h3>Stay Visible. Reach the Right People. Create More Opportunities.</h3><p class="in">A strong presence needs steady visibility so the right people keep seeing and remembering you.</p>
+<div class="two"><div><h4>What we provide</h4><ul><li>Social content planning</li><li>Posts, reels and stories</li><li>Meta and Google campaign management</li><li>Listing updates where relevant</li><li>Monitoring and performance reviews</li></ul></div><div><h4>What it means for you</h4><ul><li>Better brand awareness</li><li>Reach to relevant audiences</li><li>Consistent offers and messages</li><li>More chances for enquiries</li><li>Clarity on what performs better</li></ul></div></div></div>
+<div><div class="vis"><div class="cal" role="img" aria-label="Example weekly content plan"><span class="p">Reel</span><span>Story</span><span class="p">Post</span><span>Offer</span><span>Post</span><span class="p">Story</span><span>Reel</span><span class="p">Ad</span></div></div><span class="note">Example content plan. Ad spend is paid directly to the platform by the client.</span></div></article>
+
+<article class="svc rv"><div class="tx"><p class="tag">Sales Conversion</p><h3>Every Enquiry Deserves a Next Step.</h3><p class="in">Attracting interest is only half the job. Businesses also need a dependable way to respond. Sales outcomes depend on many factors and are not guaranteed.</p>
+<div class="two"><div><h4>What we provide</h4><ul><li>Enquiry handling via agreed channels</li><li>WhatsApp and call responses, as agreed</li><li>Follow-ups with interested prospects</li><li>Appointment, visit or demo scheduling</li><li>Lead status tracking and regular reports</li></ul></div><div><h4>What it means for you</h4><ul><li>Fewer enquiries overlooked</li><li>More consistent responses</li><li>Contact kept with interested prospects</li><li>A clear route from enquiry to action</li><li>Visibility into sales activity</li></ul></div></div></div>
+<div><div class="vis"><div class="pipe" role="img" aria-label="Pipeline: new enquiry, contacted, follow-up, appointment, outcome"><div>New enquiry<i class="p"></i><i></i><i></i></div><div>Contacted<i class="p"></i><i></i></div><div>Follow-up<i class="p"></i></div><div>Appointment<i class="p"></i></div><div>Outcome<i></i></div></div></div><span class="note">Illustrative pipeline. We don’t handle payments, deliveries or complaints.</span></div></article>
+</div></section>
+
+<section class="dark" id="journey" aria-labelledby="jh"><div class="w">
+<div class="head rv"><h2 id="jh">Growth Happens When Everything Works Together.</h2><p class="sub" style="color:#B9C0DE">Be Seen. Get Chosen. Grow. One connected journey from first impression to customer conversation.</p></div>
+<div class="rail" id="rail"><div class="tr" aria-hidden="true"><div class="fl" id="fl"></div></div>
+<div class="st"><p class="k">Stage 1 · Be discovered</p><h3>Digital Presence</h3><p>The business becomes easier to understand, discover and contact online.</p></div>
+<div class="st"><p class="k">Stage 2 · Build interest</p><h3>Digital Marketing</h3><p>Relevant people discover the business and engage with its content or campaigns.</p></div>
+<div class="st"><p class="k">Stage 3 · Turn interest into action</p><h3>Sales Conversion</h3><p>Enquiries receive appropriate responses, follow-ups and clear next steps.</p></div>
+<div class="st"><p class="k">Stage 4 · Learn and improve</p><h3>Insights and Optimisation</h3><p>Enquiry records and marketing information show where to improve next, and the journey starts stronger.</p></div>
+</div></div></section>
+
+<section aria-labelledby="bh"><div class="w"><div class="head rv"><h2 id="bh">Built Around What Matters to Your Business.</h2></div>
+<div class="ben">
+<div class="rv"><h3>A Stronger First Impression</h3><p>Help potential customers understand your business and what makes it valuable.</p></div>
+<div class="rv" style="--i:1"><h3>Better Online Visibility</h3><p>Create more opportunities for relevant people to discover your business.</p></div>
+<div class="rv" style="--i:2"><h3>Consistent Brand Communication</h3><p>Keep your message clear across your website and marketing channels.</p></div>
+<div class="rv"><h3>Organised Enquiry Management</h3><p>A clearer process for handling and following up on potential customers.</p></div>
+<div class="rv" style="--i:1"><h3>Visibility Into Performance</h3><p>Understand enquiry activity, follow-ups and available marketing results.</p></div>
+<div class="rv" style="--i:2"><h3>More Time for Your Business</h3><p>Less coordination than managing separate providers for these services.</p></div>
+</div></div></section>
+
+<section class="who" aria-labelledby="wh"><div class="w"><div class="head rv"><h2 id="wh">Supporting Businesses Ready for Their Next Stage of Growth.</h2><p class="sub">Example types of business we can support. These are target audiences, not existing clients.</p></div>
+<ul class="wl rv">
+<li><b>Local and retail</b><span>Build a credible online presence and make it easier for nearby customers to find and contact you.</span></li>
+<li><b>Professional services</b><span>Communicate your expertise clearly and give potential clients a simple way to enquire.</span></li>
+<li><b>Clinics and wellness</b><span>Share services and timings clearly and make appointment requests easy.</span></li>
+<li><b>Education and training</b><span>Present courses, answer common questions and make enquiries or visits easier to organise.</span></li>
+<li><b>Real estate</b><span>Present listings clearly and respond to interested buyers and tenants promptly.</span></li>
+<li><b>Restaurants and hospitality</b><span>Showcase offerings, share key information and simplify customer enquiries.</span></li>
+<li><b>Other SMEs</b><span>If customers reach you by enquiry or appointment, this approach may suit you.</span></li>
+</ul></div></section>
+
+<section id="process" aria-labelledby="prh"><div class="w pg"><div class="head rv" style="margin:0"><h2 id="prh">Clear Steps. One Connected Team.</h2><p class="sub">You will know what happens next at every stage.</p></div>
+<ol class="tl">
+<li class="rv"><em>1</em><h3>Discover</h3><p>We learn about your business, audience, goals and your current customer acquisition process.</p></li>
+<li class="rv"><em>2</em><h3>Understand</h3><p>We learn your offerings, services, common customer questions and how you want your business represented.</p></li>
+<li class="rv"><em>3</em><h3>Build your presence</h3><p>We develop the website and set up the agreed digital foundations.</p></li>
+<li class="rv"><em>4</em><h3>Attract and engage</h3><p>We carry out the agreed marketing and begin handling enquiries through the agreed workflow.</p></li>
+<li class="rv"><em>5</em><h3>Review and improve</h3><p>We review available marketing and enquiry information, share progress and identify practical next steps.</p></li>
+</ol></div></section>
+
+<section class="dark" id="contact" aria-labelledby="ch" style="background:radial-gradient(50% 60% at 15% 10%,rgba(75,77,255,.25),transparent 70%),var(--navy)"><div class="w cg">
+<div><h2 id="ch">Your Next Customer Could Be Looking for You Right Now.</h2><p class="sub" style="color:#B9C0DE">Let’s make it easier for people to discover your business, understand your value, and take the next step.</p>
+<div class="cta" style="margin-top:28px"><a class="btn bp" href="#form">Let’s Talk About Your Business</a><a class="btn bg" href="#" data-wa>Start a Conversation on WhatsApp</a></div>
+<ul class="dl contact-links">
+<li><span>Email</span><a href="mailto:growthtrelyo@gmail.com" data-email>growthtrelyo@gmail.com</a></li>
+<li><span>Call &amp; WhatsApp</span>
+<div class="num-list" data-phone>
+<a href="tel:+919043078364">+91 90430 78364</a>
+<a href="tel:+919363403175">+91 9363403175</a>
+<a href="tel:+917358866644">+91 73588 66644</a>
+</div>
+</li>
+</ul></div>
+<form id="form" novalidate aria-label="Contact form">
+<div class="r2"><label for="n">Name<input id="n" name="n" autocomplete="name" required><span class="er" id="e-n"></span></label><label for="b">Business name<input id="b" name="b" autocomplete="organization"></label></div>
+<label for="c">Email or phone number<input id="c" name="c" autocomplete="email" required><span class="er" id="e-c"></span></label>
+<label for="t">Business type<select id="t" name="t"><option value="">Select (optional)</option><option>Local or retail</option><option>Professional services</option><option>Clinic or wellness</option><option>Education or training</option><option>Real estate</option><option>Restaurant or hospitality</option><option>Other</option></select></label>
+<fieldset><legend>What would you like help with?</legend><div class="opt"><label><input type="radio" name="h" value="Digital Presence">Digital Presence</label><label><input type="radio" name="h" value="Digital Marketing">Digital Marketing</label><label><input type="radio" name="h" value="Sales Conversion">Sales Conversion</label><label><input type="radio" name="h" value="All Three">All Three</label></div><span class="er" id="e-h"></span></fieldset>
+<label for="m">Message <small>Optional</small><textarea id="m" name="m"></textarea></label>
+<button class="btn bp" type="submit">Send enquiry</button><p id="st" role="status" aria-live="polite"></p>
+</form></div></section>
+</main>
+
+<footer><div class="w"><div class="fg">
+<div><a class="logo" href="#top" data-brand>Trelyo</a><p style="margin-top:12px;max-width:26em">One growth partner for digital presence, digital marketing and sales conversion.</p></div>
+<div><h4>Navigate</h4><ul><li><a href="#services">Services</a></li><li><a href="#why">Why Us</a></li><li><a href="#process">Our Process</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h4>Services</h4><ul><li>Digital Presence</li><li>Digital Marketing</li><li>Sales Conversion</li></ul></div>
+<div><h4>Connect</h4><ul>
+<li><a href="mailto:growthtrelyo@gmail.com">growthtrelyo@gmail.com</a></li>
+<li><a href="tel:+919043078364">+91 90430 78364</a></li>
+<li><a href="tel:+919363403175">+91 9363403175</a></li>
+<li><a href="tel:+917358866644">+91 73588 66644</a></li>
+<li><a href="https://www.linkedin.com/company/trelyo" target="_blank" rel="noopener">LinkedIn</a></li>
+</ul></div>
+</div><div class="cp"><span>© <span id="yr"></span> Trelyo. All rights reserved.</span></div></div></footer>
+
+<script>
+var CONFIG={
+  brand:"Trelyo",
+  whatsappNumbers:[
+    {raw:"919043078364",display:"+91 90430 78364"},
+    {raw:"919363403175",display:"+91 9363403175"},
+    {raw:"917358866644",display:"+91 73588 66644"}
+  ],
+  primaryWhatsapp:"919043078364",
+  email:"growthtrelyo@gmail.com",
+  formEndpoint:"",
+  social:{linkedin:"https://www.linkedin.com/company/trelyo"}
+};
+
+(function(){
+var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return[].slice.call((r||document).querySelectorAll(s))};
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+$('#yr').textContent=new Date().getFullYear();
+var st=$('#st');
+
+function waUrl(num, t){
+  return 'https://wa.me/'+num+(t?'?text='+encodeURIComponent(t):'');
+}
+
+$$('[data-wa]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    if(CONFIG.primaryWhatsapp){
+      a.href=waUrl(CONFIG.primaryWhatsapp,'Hi, I’d like to talk about growing my business with Trelyo.');
+      a.target='_blank';
+      a.rel='noopener';
+    }else{
+      e.preventDefault();
+      $('#form').scrollIntoView();
+    }
+  });
+});
+
+// nav
+var nav=$('#nav'),mb=$('#mb'),ml=$('#ml');
+function sc(){nav.classList.toggle('s',scrollY>20)}addEventListener('scroll',sc,{passive:true});sc();
+mb.addEventListener('click',function(){var o=ml.classList.toggle('o');mb.setAttribute('aria-expanded',o)});
+ml.addEventListener('click',function(e){if(e.target.tagName==='A'){ml.classList.remove('o');mb.setAttribute('aria-expanded','false')}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){ml.classList.remove('o');mb.setAttribute('aria-expanded','false')}});
+
+// reveal
+var rv=$$('.rv');
+if('IntersectionObserver' in window&&!rm){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  rv.forEach(function(el){io.observe(el)});
+}else{
+  rv.forEach(function(el){el.classList.add('in')});
+}
+
+// journey
+var rail=$('#rail'),fl=$('#fl'),sts=$$('.st'),tk=0;
+function up(){
+  tk=0;
+  var r=rail.getBoundingClientRect(),m=innerHeight*.6,p=Math.min(1,Math.max(0,(m-r.top)/r.height));
+  fl.style.transform='scaleY('+p+')';
+  sts.forEach(function(s){s.classList.toggle('on',rm||s.getBoundingClientRect().top<m)});
+}
+function rq(){if(!tk){tk=1;requestAnimationFrame(up)}}addEventListener('scroll',rq,{passive:true});addEventListener('resize',rq);up();
+
+// form
+var f=$('#form');
+function er(id,msg,inp){$('#e-'+id).textContent=msg;if(inp)inp.setAttribute('aria-invalid',msg?'true':'false')}
+f.addEventListener('submit',function(e){
+  e.preventDefault();st.style.color='';st.textContent='';
+  var n=f.n.value.trim(),c=f.c.value.trim(),h=(f.querySelector('[name=h]:checked')||{}).value,ok=true;
+  er('n',n?'':'Please enter your name.',f.n);if(!n)ok=false;
+  var good=/^\S+@\S+\.\S+$/.test(c)||/^[+\d][\d\s()-]{6,}$/.test(c);er('c',good?'':'Enter a valid email address or phone number.',f.c);if(!good)ok=false;
+  er('h',h?'':'Please choose what you need help with.');if(!h)ok=false;
+  if(!ok){var x=f.querySelector('[aria-invalid=true]')||f.querySelector('[name=h]');x.focus();return}
+  var msg='Name: '+n+'\nBusiness: '+f.b.value+'\nContact: '+c+'\nType: '+f.t.value+'\nHelp with: '+h+'\n\n'+f.m.value;
+  if(CONFIG.formEndpoint){
+    st.textContent='Sending…';
+    fetch(CONFIG.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({name:n,business:f.b.value,contact:c,type:f.t.value,help:h,message:f.m.value})})
+    .then(function(r){if(!r.ok)throw 0;st.style.color='#0B6B3A';st.textContent='Thanks, your enquiry has been sent.';f.reset()})
+    .catch(function(){st.style.color='#B3261E';st.textContent='Sorry, that didn’t send. Please try again or use WhatsApp.'});
+  }else if(CONFIG.primaryWhatsapp){
+    st.style.color='#0B6B3A';
+    st.textContent='Opening WhatsApp with your message ready. Press send there to complete your enquiry.';
+    window.open(waUrl(CONFIG.primaryWhatsapp,msg),'_blank','noopener');
+  }else{
+    st.style.color='#B3261E';
+    st.textContent='This form isn’t connected yet, so nothing was sent.';
+  }
+});
+})();
+</script>
+</body>
+</html>
